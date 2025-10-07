@@ -23,7 +23,7 @@
 
 <?php include '../view/head.php';?>
 <body>
-<?php include '../view/headrr.php';?>
+<?php include '../view/header.php';?>
 <main>
 <?php include '../view/commodore.php';?>
 <h2>Confirmed</h2>
@@ -37,4 +37,5 @@ header("Refresh: 15; url=index.php");
 exit();
 ?>
 </body>
+
 </html>
