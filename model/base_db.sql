@@ -1,6 +1,6 @@
-
-
-USE `gvsdanet_ace`;
+DROP DATABASE IF EXISTS `base_db`;
+CREATE DATABASE `base_db`;
+USE `base_db`;
 
 -- Create table structure for "courses"
 
@@ -118,3 +118,6 @@ INSERT INTO `log` (`log_signout`, `log_student_ID`, `log_course_ID`) VALUES
 (NULL, 15, 7),
 (current_timestamp(), 6, 5);
 
+-- Create "log_user"
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON * TO log_user@localhost IDENTIFIED BY 'pa55word';
